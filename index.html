@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Khanak Korotania</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            background-color: #C1D8C3;
+            color: #556B2F;
+            text-align: center;
+        }
+
+        header {
+            background-color: #cd5c08;
+            color: #C1D8C3;
+            padding: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+            font-size: 17px;
+        }
+
+        nav a {
+            margin: 15px;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #E2725B;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #CD5C08;
+            color: #C1D8C3;
+            border-radius: 80px;
+            transition: 1s;
+        }
+
+        section {
+            margin: 35px;
+            padding: 20px;
+            background-color: #FFF5E4;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #CD5C08;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            background-color: #CD5C08;
+            border-radius: 15px;
+            color: #FFFFF0;
+        }
+
+        .slider-img {
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            max-width: fit-content;
+        }
+
+        .slider {
+            background-color: #FCF5E5;
+            display: flex;
+            scroll-snap-type: x mandatory;
+            transition: transform 2s ease;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            border-radius: 8px;
+            box-shadow: inset 0 0 8px grey;
+        }
+
+        .slider img,
+        .slider video {
+            margin-left: 40%;
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            max-height: 470px;
+            flex-shrink: 2;
+            scroll-snap-align: center;
+            padding: 15px;
+            background-color: #C1D8C3;
+        }
+
+        .slider-nav {
+            display: flex;
+            column-gap: 5px;
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .slider-nav a {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #FFFFF0;
+            opacity: 0.5;
+            transition: opacity 250ms ease;
+        }
+
+        .slider-nav a:hover {
+            opacity: 5;
+        }
+
+        button {
+            background-color: #556B2F;
+            width: 150px;
+            text-align: center;
+            color: #FCF5E5;
+            padding: 15px 25px;
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #CD5C08;
+            color: #C1D8C3;
+            transition: 1ms;
+            border-radius: 18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" height="160px" width="300px">
+    </header>
+
+    <nav>
+
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#JavaScript>">JavaScript</a>
+        <a href="#music">Music</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p style="font-size: 25px; text-decoration: underline; font-weight: bold;">An Aspiring Web Developer</p>
+        <img src="khanakpic.jpg" alt="khanak-korotania" width="450" height="300"></a>
+
+        <p style="font-size: 16px; font-weight: bold; margin-left: 7%; margin-right: 7%;">As a newcomer to the world of
+            web development, I'm eager to
+            advance from a beginner's level of a bronze rank to a more skilled Ace (pun intended).My passion
+            for design has been a lifelong pursuit, and I'm excited to see this dream taking shape.
+            <br>
+            <br>
+            If it weren't for coding, I would have likely pursued a career as a professional dancer, as dance is another
+            of my first loves. To learn more about me, feel free to contact me. <br> And yes, I
+            genuinely enjoy making new connections!
+        </p>
+    </section>
+
+
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <p style="font-weight: bold; margin-left: 5%; margin-right: 5%; font-size: 17px;">1. I created a professional
+            and sleek resume website for my sister, designed to showcase her skills in a
+            visually appealing and easy-to-navigate format. The site features a clean and modern layout, with a
+            responsive design that ensures optimal viewing on all devices, from desktops to mobile phones. (This a
+            prototype)
+            <br><br>
+            <a href="Jia-portfolio.html" target="_blank"><img src="pro_1.png" width=208 height="53"></a>
+        </p>
+        <p style="font-weight: bold; margin-left: 5%; margin-right: 5%; font-size: 17px;">2. These are some basic video
+            edits I've made using Instragram, and Adobe Express. Video Editing is something I enjoy from time to time
+            and have been interested in this domain too.I've never explored video editing with a proffesional approach
+            but I have visualisation ability to bring the idea to life.<br>These are a casual outlook to that
+            domain.<br><br><a href="https://www.youtube.com/@kh4nakk/shorts" target="_blank"><img src="pro_2.png"
+                    width="210" height="55"></a></p>
+    </section>
+
+    <section id="gallery">
+        <h1>Gallery</h1>
+        <div class="slider-img">
+            <div class="slider">
+                <img id="1" src="photo1.jpg" alt="Photo 1">
+                <img id="2" src="photo2.jpg" alt="Photo 2">
+                <img id="3" src="photo3.jpg" alt="Photo 3">
+                <img id="4" src="photo4.jpg" alt="Photo 4">
+                <img id="5" src="photo5.jpg" alt="Photo 5" style="max-width: 800px; max-height: 400;">
+                <img id="6" src="photo6.jpg" alt="Photo 6">
+                <img id="7" src="photo7.JPG" alt="Photo 7">
+                <img id="8" src="photo8.JPG" alt="Photo 8">
+                <img id="9" src="photo9.jpg" alt="Photo 9" style="margin-right: 500px;">
+            </div>
+            <div class="slider-nav">
+                <a href="#1"></a>
+                <a href="#2"></a>
+                <a href="#3"></a>
+                <a href="#4"></a>
+                <a href="#5"></a>
+                <a href="#6"></a>
+                <a href="#7"></a>
+                <a href="#8"></a>
+                <a href="#9"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="JavaScript">
+        <h1>JavaScript</h1>
+        <button onclick="document.getElementById('myimg').src='jiacry.jpeg'" width="900px">Make her happy!!!</button>
+        <img id="myimg" src="jiahappy.jpeg" height="500px">
+        <button onclick="document.getElementById('myimg').src='jiahappy.jpeg'">
+            Make her cry again!!
+        </button>
+    </section>
+
+    <section id="Skills">
+        <h1>Skills</h1>
+        <ul style="list-style-position: inside; font-weight: bold; font-size: 15px;">
+            <li>Basics of HTML, CSS, Python, Javascript and C.</li>
+            <li>Video Editing</li>
+            <li>Art Major</li>
+            <li>Highly Skilled in English Language</li>
+            <li>Strong Non-Procastinater</li>
+            <li>Fast Learner</li>
+        </ul>
+    </section>
+
+    <section id="music">
+        <h1>Music</h1>
+        <p style="font-size: 17px; font-weight: bold; margin-left: 5%; margin-right: 5%;">Music is my life and use it
+            while coding for sites. I love music like it's water—can't go a day without it, and honestly, I'm probably
+            70% playlists by now!</p><br>
+        <a href="https://open.spotify.com/user/31vbrjujx5gxjjje75kpz2a2ktyy" target="_blank"><img width="50" height="50"
+                src="https://img.icons8.com/ios/50/1A1A1A/spotify--v1.png" alt="spotify--v1"></a>
+        <p>Check out my spotify!</p>
+    </section>
+
+
+    <section id="contact" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <h1>Contact Me</h1>
+        <div style="display: flex; gap: 35px;">
+            <p><a href="mailto:khanakkoro@gmail.com" target="_blank"><img width="60px" height="60" src="email.png"
+                        alt="gmail-logo"></a></p>
+            <p><a href="https://www.instagram.com/kh4nakkk/" target="_blank"><img width="60" height="60"
+                        src="instagram.png" alt="instagram-logo" /></a>
+            </p>
+            <p><a href="https://www.linkedin.com/in/khanak-korotania-741a28323/" target="_blank"><img width="60"
+                        height="60" src="linkedin.png" alt="linkedin" /></a></p>
+            <p><a href="https://github.com/kh4nakkk" target="_blank"><img width="60" height="60" src="github.png"
+                        alt="github-logo"></a>
+            </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>With lots of love and code!</p>
+        <p>&copy; 2024 Khanak Korotania. All rights reserved With Love.</p>
+    </footer>
+
+</body>
+
+</html>
